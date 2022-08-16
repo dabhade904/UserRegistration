@@ -4,7 +4,8 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome Message");
-        }
+            Console.WriteLine("Enter first name");
+            string fName = Console.ReadLine();
+            UserPattern.getFullNamePattern(fName);       }
     }
 }
