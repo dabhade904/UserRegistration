@@ -6,6 +6,11 @@
         {
             Console.WriteLine("Enter first name");
             string fName = Console.ReadLine();
-            UserPattern.getFullNamePattern(fName);       }
+            UserPattern.getFullNamePattern(fName);
+
+            Console.WriteLine("Enter last name");
+            string lName = Console.ReadLine();
+            UserPattern.getFullNamePattern(lName);
+        }
     }
 }
