@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter number: \n 1. Enter First Name \n 2. Enter Last Name \n 3. Email ID   \n 4. Mobile number");
+            Console.WriteLine("Enter number: \n 1. Enter First Name \n 2. Enter Last Name \n 3. Email ID   \n 4. Mobile number \n 5. Enter Password");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
@@ -28,12 +28,12 @@
                     string mobile = Console.ReadLine();
                     UserPattern.getMobileNumber(mobile);
                     break;
+                case 5:
+                    Console.WriteLine("Enter password");
+                    string password = Console.ReadLine();
+                    UserPattern.getUserPassword(password);
+                    break;
             }
-          
-
-           
-
-         
         }
     }
 }
