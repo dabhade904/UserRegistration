@@ -59,5 +59,18 @@ namespace UserRegistrationProblem
                 Console.WriteLine("Password is not valid ");
             }
         }
+
+        public static void getPassAllEmails(string email)
+        {
+            var match = Regex.IsMatch(email, Email_ID_Pattern);
+            if (match)
+            {
+                Console.WriteLine("Email is valid");
+            }
+            else
+            {
+                Console.WriteLine("Email ID is not valid ");
+            }
+        }
     }
 }
